@@ -1,9 +1,12 @@
-import './App.css'
+import './App.css';
+
+import LandingSection from './Components/LandingSection/LandingSection';
 
 function App() {
 
   return (
     <>
+    <LandingSection/>
     </>
   )
 }
