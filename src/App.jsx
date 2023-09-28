@@ -1,6 +1,7 @@
 import './App.css';
 
 import LandingSection from './Components/LandingSection/LandingSection';
+import MarketUpdate from './Components/MarketUpdate/MarketUpdate';
 import NavBar from './Components/NavBar/NavBar';
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
     <NavBar/>
 
     <LandingSection/>
+
+    <MarketUpdate/>
     </>
   )
 }
