@@ -6,7 +6,9 @@ export default function NavBar(){
 
             <div className={styles.navWrapper}>
 
-                <a href="#">Logo</a>
+                <a href="#">
+                    <img src="../../img/Logo.svg" alt="Crypto-search" />
+                </a>
 
                 <div className={styles.navButtons}>
 
