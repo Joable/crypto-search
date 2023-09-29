@@ -1,0 +1,5 @@
+/* coins */
+.coins{
+    display: flex;
+    gap: 10px;
+}
