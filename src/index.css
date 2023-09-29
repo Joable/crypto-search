@@ -20,3 +20,13 @@ h1{
   font-size: 70px;
   margin: 0;
 }
+
+button{
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: white;
+  border: 0;
+}
+
+button:hover{
+  cursor: pointer;
+}

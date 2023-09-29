@@ -10,3 +10,9 @@
     justify-content: space-between;
     width: 1000px;
 }
+
+/* navButtons */
+.navButtons button{
+    font-size: 18px;
+    margin-right: 10px;
+}
