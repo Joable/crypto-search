@@ -10,9 +10,13 @@ function App() {
     <>
     <NavBar/>
 
-    <LandingSection/>
+    <div className='center'>
 
-    <MarketUpdate/>
+      <LandingSection/>
+
+      <MarketUpdate/>
+
+    </div>
     </>
   )
 }
