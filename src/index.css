@@ -15,3 +15,8 @@ section{
   height: 100vh;
   max-height: 1080px;
 }
+
+h1{
+  font-size: 70px;
+  margin: 0;
+}
