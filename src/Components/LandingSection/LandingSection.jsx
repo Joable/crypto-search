@@ -10,21 +10,23 @@ export default function LandingSection(){
     }
 
     return(
-        <>
-        <h2>Title</h2>
-        <h2>Colored Title</h2>
+        <section className={styles.landingSection}>
+        
+            <h2>Title</h2>
+            <h2>Colored Title</h2>
 
-        <div className={styles.coins}>
+            <div className={styles.coins}>
 
-            <CoinDisplay coinData={coin}/>
+                <CoinDisplay coinData={coin}/>
 
-            <CoinDisplay coinData={coin}/>
+                <CoinDisplay coinData={coin}/>
 
-            <CoinDisplay coinData={coin}/>
+                <CoinDisplay coinData={coin}/>
 
-            <CoinDisplay coinData={coin}/>
+                <CoinDisplay coinData={coin}/>
 
-        </div>
-        </>
+            </div>
+
+        </section>
     )
 }
