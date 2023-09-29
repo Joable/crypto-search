@@ -1,0 +1,12 @@
+/* navBar */
+.navBar{
+    display: flex;
+    justify-content: center;
+}
+
+/* navWrapper */
+.navWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
