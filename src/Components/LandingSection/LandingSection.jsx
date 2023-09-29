@@ -5,7 +5,7 @@ import CoinDisplay from '../CoinDisplay/CoinDisplay';
 export default function LandingSection(){
     const coin = {
         name: "xD",
-        change: "50",
+        change: "50%",
         value:"30"
     }
 
