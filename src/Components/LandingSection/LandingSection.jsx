@@ -12,8 +12,8 @@ export default function LandingSection(){
     return(
         <section className={styles.landingSection}>
         
-            <h2>Title</h2>
-            <h2>Colored Title</h2>
+            <h1>Title</h1>
+            <h1>Colored Title</h1>
 
             <div className={styles.coins}>
 

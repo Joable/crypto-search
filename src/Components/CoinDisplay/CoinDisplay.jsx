@@ -8,11 +8,11 @@ export default function CoinDisplay({ coinData }){
 
             <img src="../../img/smiley1.png" alt="Coin" />
 
-            <div >
+            <div className={styles.coinText}>
 
-                <h3>{name} {value}</h3>
+                <h3>{name} {change}</h3>
 
-                <h3>Value</h3>
+                <h3>{value}</h3>
             
             </div>
 
