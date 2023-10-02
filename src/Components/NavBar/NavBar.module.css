@@ -18,12 +18,18 @@
     max-height: 100%;
 }
 
-.navWrapper a{
-    width: auto;
+/* navButtons */
+.navButtons{
+    display: flex;
 }
 
-/* navButtons */
 .navButtons button{
     font-size: 18px;
     margin-right: 10px;
+}
+
+/* navSocial */
+.navSocial{
+    display: flex;
+    align-items: center;
 }
