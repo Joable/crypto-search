@@ -1,5 +1,7 @@
 import styles from './MarketUpdate.module.css';
 
+import MarketList from '../MarketList/MarketList';
+
 export default function MarketUpdate(){
     return(
         <>
@@ -16,6 +18,8 @@ export default function MarketUpdate(){
             <h3>Market Cap</h3>
 
         </div>
+
+        <MarketList/>
         </>
     );
 }
