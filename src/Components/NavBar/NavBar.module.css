@@ -1,8 +1,11 @@
 /* navBar */
 .navBar{
+    position: sticky;
     display: flex;
     justify-content: center;
+    top: 0;
     height: 50px;
+    padding: 5px 0;
 }
 
 /* navWrapper */
@@ -10,6 +13,8 @@
     display: flex;
     justify-content: space-between;
     width: 1000px;
+    max-height: 100%;
+    margin: auto;
 }
 
 .navWrapper img{
