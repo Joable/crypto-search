@@ -5,7 +5,7 @@ export default function MarketUpdate(){
         <>
         <h2>Market Update</h2>
 
-        <div className={styles.divitions}>
+        <div className={styles.divisions}>
 
             <h3>Coin</h3>
 
