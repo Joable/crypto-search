@@ -2,6 +2,7 @@
 .navBar{
     display: flex;
     justify-content: center;
+    height: 50px;
 }
 
 /* navWrapper */
@@ -9,6 +10,16 @@
     display: flex;
     justify-content: space-between;
     width: 1000px;
+}
+
+.navWrapper img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.navWrapper a{
+    width: auto;
 }
 
 /* navButtons */
