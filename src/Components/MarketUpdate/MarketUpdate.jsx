@@ -4,7 +4,7 @@ import MarketList from '../MarketList/MarketList';
 
 export default function MarketUpdate(){
     return(
-        <section>
+        <section className={styles.marketUpdate}>
         <h2>Market Update</h2>
 
         <div className={styles.divisions}>

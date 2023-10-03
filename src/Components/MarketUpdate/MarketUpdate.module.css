@@ -4,3 +4,12 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+/* marketUpdate */
+.marketUpdate h3{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.marketUpdate h3:first-child{
+    justify-content: flex-start;
+}

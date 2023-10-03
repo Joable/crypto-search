@@ -1,4 +1,14 @@
+/* marketElement */
 .marketElement{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.marketElement h4{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.marketElement h4:first-child{
+    justify-content: flex-start;
 }
