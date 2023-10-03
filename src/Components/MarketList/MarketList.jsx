@@ -11,15 +11,15 @@ import MarketElement from '../MarketElement/MarketElement';
 export default function MarketList(){
     const coinsPerPage = 5;
     const totalCoins = 20;
-    const totalPages = Math.ceil(totalCoins / coinsPerPage);
+    const totalPages = createArray(Math.ceil(totalCoins / coinsPerPage));
     const array = createArray(totalCoins);
     const [currentCoins, setCurrentCoins] = useState([])
     const [currentFirstElement , setCurrentFirstElement] = useState(0);
     const [currentLastElement, setCurrentLastElement] = useState(coinsPerPage);
 
-    useEffect(() =>  navigateArray(3), []);
+    useEffect(() =>  displayCoins(1), []);
 
-    const navigateArray = (page) => {
+    const displayCoins = (page) => {
         let coins = [];
         
         setCurrentFirstElement(0 + (coinsPerPage * page));
@@ -36,6 +36,8 @@ export default function MarketList(){
         <div className={styles.marketList}>
             {console.log(currentCoins)}
             {currentCoins.map((num) => <MarketElement coin={num}/>)}
+
+            {totalPages.map((num) => <button onClick={() => displayCoins(num)}> {num} </button>)}
         </div>
     );
 }
