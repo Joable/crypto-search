@@ -14,27 +14,25 @@ export default function MarketList(){
     const totalPages = createArray(Math.ceil(totalCoins / coinsPerPage));
     const array = createArray(totalCoins);
     const [currentCoins, setCurrentCoins] = useState([])
-    const [currentFirstElement , setCurrentFirstElement] = useState(0);
-    const [currentLastElement, setCurrentLastElement] = useState(coinsPerPage);
+    const [pageIndexes, setPageIndexes] = useState({firstElement: 0, lastElement: coinsPerPage})
 
-    useEffect(() =>  displayCoins(1), []);
+    useEffect(() =>  displayCoins(0), []);
 
-    const displayCoins = (page) => {
+    useEffect(() => {
         let coins = [];
-        
-        setCurrentFirstElement(0 + (coinsPerPage * page));
-        setCurrentLastElement(coinsPerPage + (coinsPerPage * page));
 
-        for(let i = currentFirstElement ; i < currentLastElement ; i++){
-            coins.push(array[i]);
-        }
+        for(let i = pageIndexes.firstElement ; i < pageIndexes.lastElement ; i++){
+                coins.push(array[i]);
+            }
+    
+            setCurrentCoins(coins);
+    }, [pageIndexes]);
 
-        setCurrentCoins(coins);
-    }
+    const displayCoins = (page) => setPageIndexes({firstElement: coinsPerPage * page, lastElement: coinsPerPage * (page + 1 )});
 
     return(
         <div className={styles.marketList}>
-            {console.log(currentCoins)}
+
             {currentCoins.map((num) => <MarketElement coin={num}/>)}
 
             {totalPages.map((num) => <button onClick={() => displayCoins(num)}> {num} </button>)}
