@@ -16,8 +16,10 @@ export default function MarketList(){
     const [currentCoins, setCurrentCoins] = useState([])
     const [pageIndexes, setPageIndexes] = useState({firstElement: 0, lastElement: coinsPerPage})
 
-    useEffect(() =>  displayCoins(0), []);
+    /* displays the first array elements at firts mount */
+    useEffect(() =>  handlePageChange(0), []);
 
+    /* changes the displayed elements when the page indexes changes*/
     useEffect(() => {
         let coins = [];
 
@@ -28,14 +30,18 @@ export default function MarketList(){
             setCurrentCoins(coins);
     }, [pageIndexes]);
 
-    const displayCoins = (page) => setPageIndexes({firstElement: coinsPerPage * page, lastElement: coinsPerPage * (page + 1 )});
+    const handlePageChange = (page) => setPageIndexes({firstElement: coinsPerPage * page, lastElement: coinsPerPage * (page + 1 )});
 
     return(
+        <>
         <div className={styles.marketList}>
 
             {currentCoins.map((num) => <MarketElement coin={num}/>)}
-
-            {totalPages.map((num) => <button onClick={() => displayCoins(num)}> {num} </button>)}
         </div>
+
+        <div className={styles.listButtons}>
+            {totalPages.map((num) => <button onClick={() => handlePageChange(num)}> {num + 1} </button>)}
+        </div>
+        </>
     );
 }
