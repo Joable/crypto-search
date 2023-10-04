@@ -16,6 +16,10 @@ export default function ChooseUs(){
                     <Reason/>
                 </div>
 
+                <div className={styles.reasonsImage}>
+                    <img src="../../img/happiness.png" alt="happiness" />
+                </div>
+
                 <div className={styles.reasonsLeft}>
                     <Reason/>
                     <Reason/>
