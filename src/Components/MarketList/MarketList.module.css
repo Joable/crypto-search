@@ -1,5 +1,17 @@
+/* listButtons */
 .listButtons{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.listButtons button{
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+}
+
+.listButtons button:hover{
+    border: 1px solid black;
 }
