@@ -1,13 +1,15 @@
 /* reason */
 .reason{
     display: flex;
+    flex-direction: row;
 }
-
 
 /* image */
 .image{
-    width: 80px;
-    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 80px;
+    max-height: 80px;
 }
 
 .image img{
