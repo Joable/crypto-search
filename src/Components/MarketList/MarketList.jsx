@@ -13,8 +13,9 @@ export default function MarketList(){
     const totalCoins = 20;
     const totalPages = createArray(Math.ceil(totalCoins / coinsPerPage));
     const array = createArray(totalCoins);
-    const [currentCoins, setCurrentCoins] = useState([])
-    const [pageIndexes, setPageIndexes] = useState({firstElement: 0, lastElement: coinsPerPage})
+    const [currentCoins, setCurrentCoins] = useState([]);
+    const [pageIndexes, setPageIndexes] = useState({firstElement: 0, lastElement: coinsPerPage});
+    const [activeButton, setActiveButton] = useState(0);
 
     /* displays the first array elements at firts mount */
     useEffect(() =>  handlePageChange(0), []);
@@ -30,7 +31,19 @@ export default function MarketList(){
             setCurrentCoins(coins);
     }, [pageIndexes]);
 
-    const handlePageChange = (page) => setPageIndexes({firstElement: coinsPerPage * page, lastElement: coinsPerPage * (page + 1 )});
+    const handlePageChange = (page) => {
+        setPageIndexes({firstElement: coinsPerPage * page, lastElement: coinsPerPage * (page + 1 )})
+    
+        setActiveButton(page);
+    };
+
+    const buttonIsActive = (num) => {
+        let buttonClass = styles.inactiveButton;
+
+        if (activeButton == num) buttonClass = styles.activeButton;
+
+        return buttonClass;
+    }
 
     return(
         <>
@@ -40,7 +53,7 @@ export default function MarketList(){
         </div>
 
         <div className={styles.listButtons}>
-            {totalPages.map((num) => <button onClick={() => handlePageChange(num)}> {num + 1} </button>)}
+            {totalPages.map((num) => <button onClick={() => handlePageChange(num)} className={buttonIsActive(num)}> {num + 1} </button>)}
         </div>
         </>
     );

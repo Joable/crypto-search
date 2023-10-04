@@ -5,13 +5,23 @@
     align-items: center;
 }
 
-.listButtons button{
+/* inactiveButton */
+.inactiveButton{
     font-size: 18px;
     width: 35px;
     height: 35px;
     border: 1px solid white;
 }
 
-.listButtons button:hover{
+.inactiveButton:hover{
+    border: 1px solid black;
+}
+
+/* activeButton */
+.activeButton{
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    background-color: gray;
     border: 1px solid black;
 }
