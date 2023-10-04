@@ -2,7 +2,9 @@ import styles from './Reason.module.css';
 
 export default function Reason(){
     return(
-        <>
+        <div style={styles.reason}>
+            <img src="../../img/smiley2.png" alt="smiley"/>
+
             <h3>Title</h3>
 
             <p>
@@ -10,6 +12,6 @@ export default function Reason(){
                 Nullam pulvinar lorem eleifend feugiat scelerisque. 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-        </>
+        </div>
     )
 }
