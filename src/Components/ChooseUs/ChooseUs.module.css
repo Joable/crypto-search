@@ -1,0 +1,10 @@
+/* reasonsWrapper */
+.reasonsWrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* reasonsLeft */
+.reasonsLeft{
+    grid-column: 3/4;
+}
