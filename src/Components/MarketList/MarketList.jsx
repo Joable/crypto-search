@@ -32,7 +32,7 @@ export default function MarketList(){
     }, [pageIndexes]);
 
     const handlePageChange = (page) => {
-        setPageIndexes({firstElement: coinsPerPage * page, lastElement: coinsPerPage * (page + 1 )})
+        setPageIndexes({firstElement: coinsPerPage * page, lastElement: coinsPerPage * (page + 1 )});
     
         setActiveButton(page);
     };
@@ -48,7 +48,6 @@ export default function MarketList(){
     return(
         <>
         <div className={styles.marketList}>
-
             {currentCoins.map((num) => <MarketElement coin={num}/>)}
         </div>
 
