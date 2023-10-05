@@ -4,3 +4,15 @@
     width: 1000px;
     height: 100%;
 }
+
+/* mainTitle */
+.mainTitle{
+    font-size: 90px;
+    margin-bottom: 0;
+}
+
+/* coloredTitle */
+.coloredTitle{
+    font-size: 90px;
+    margin-top: 0;
+}
