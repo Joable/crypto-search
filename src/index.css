@@ -22,6 +22,7 @@ h1{
 }
 
 button{
+  font-size: 18px;
   font-family: 'Josefin Sans', sans-serif;
   background-color: white;
   border: 0;

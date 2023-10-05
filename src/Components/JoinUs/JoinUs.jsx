@@ -13,7 +13,7 @@ export default function JoinUs(){
 
             <p>Invest and manage all your crypto in one place</p>
 
-            <button>Join via Discord</button>
+            <button className={styles.joinDiscord}>Join via Discord</button>
 
             <div className={styles.social}>
 
@@ -26,7 +26,7 @@ export default function JoinUs(){
                 <a href="#">Youtube</a>
 
             </div>
-            
+
         </section>
     )
 }
