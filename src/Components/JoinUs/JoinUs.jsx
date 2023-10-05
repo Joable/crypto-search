@@ -2,7 +2,8 @@ import styles from './JoinUs.module.css';
 
 export default function JoinUs(){
     return(
-        <section>
+        <section className={styles.joinUs}>
+
             <h2 className='mainTitle'>
                 JOIN US VIA
             </h2>
@@ -25,6 +26,7 @@ export default function JoinUs(){
                 <a href="#">Youtube</a>
 
             </div>
+            
         </section>
     )
 }
