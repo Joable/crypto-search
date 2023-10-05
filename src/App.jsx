@@ -1,5 +1,6 @@
 import './App.css';
 import ChooseUs from './Components/ChooseUs/ChooseUs';
+import JoinUs from './Components/JoinUs/JoinUs';
 
 import LandingSection from './Components/LandingSection/LandingSection';
 import MarketUpdate from './Components/MarketUpdate/MarketUpdate';
@@ -18,6 +19,8 @@ function App() {
       <MarketUpdate/>
 
       <ChooseUs/>
+
+      <JoinUs/>
 
     </div>
     </>
