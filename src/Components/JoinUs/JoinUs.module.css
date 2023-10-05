@@ -1,7 +1,14 @@
 /* joinUs */
 .joinUs{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* social */
+.social{
+    position: absolute;
+    bottom: 5px;
 }
