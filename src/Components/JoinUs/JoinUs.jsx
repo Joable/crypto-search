@@ -17,13 +17,13 @@ export default function JoinUs(){
 
             <div className={styles.social}>
 
-                <a href="#">Twitter</a>
+                <a href="#" className={styles.filter}><img src="../../img/Twitter.svg" alt="Twitter"/></a>
                 
-                <a href="#">Discord</a>
+                <a href="#" className={styles.filter}><img src="../../img/Discord.svg" alt="Discord"/></a>
                 
-                <a href="#">Facebook</a>
+                <a href="#" className={styles.filter}><img src="../../img/Facebook.svg" alt="Facebook"/></a>
                 
-                <a href="#">Youtube</a>
+                <a href="#" className={styles.filter}><img src="../../img/Youtube.svg" alt="Youtube"/></a>
 
             </div>
 
