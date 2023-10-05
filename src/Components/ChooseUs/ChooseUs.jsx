@@ -9,7 +9,7 @@ export default function ChooseUs(){
     
     return(
         <section className={styles.chooseUs}>
-            <h2>
+            <h2 className={styles.title}>
                 Why Choose Us
             </h2>
 
