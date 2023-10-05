@@ -2,6 +2,11 @@ import Reason from '../Reason/Reason';
 import styles from './ChooseUs.module.css';
 
 export default function ChooseUs(){
+    const placeholder = {
+        title: "Title",
+        text: "Sed turpis eros, elementum a aliquet tincidunt, tempor non nunc."
+    }
+    
     return(
         <section className={styles.chooseUs}>
             <h2>
@@ -11,9 +16,9 @@ export default function ChooseUs(){
             <div className={styles.reasonsWrapper}>
                 
                 <div className={styles.reasonsRight}>
-                    <Reason/>
-                    <Reason/>
-                    <Reason/>
+                    <Reason reasonContent={placeholder}/>
+                    <Reason reasonContent={placeholder}/>
+                    <Reason reasonContent={placeholder}/>
                 </div>
 
                 <div className={styles.reasonsImage}>
@@ -21,9 +26,9 @@ export default function ChooseUs(){
                 </div>
 
                 <div className={styles.reasonsLeft}>
-                    <Reason/>
-                    <Reason/>
-                    <Reason/>
+                    <Reason reasonContent={placeholder}/>
+                    <Reason reasonContent={placeholder}/>
+                    <Reason reasonContent={placeholder}/>
                 </div>
 
             </div>

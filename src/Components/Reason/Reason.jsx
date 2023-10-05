@@ -1,6 +1,8 @@
 import styles from './Reason.module.css';
 
-export default function Reason(){
+export default function Reason({ reasonContent }){
+    const {title, text} = reasonContent
+
     return(
         <div className={styles.reason}>
             
@@ -9,12 +11,10 @@ export default function Reason(){
             </div>
 
             <div className={styles.reasonText}>
-                <h3>Title</h3>
+                <h3>{title}</h3>
 
                 <p>
-                    Curabitur eget magna sit amet sem vehicula dapibus. 
-                    Nullam pulvinar lorem eleifend feugiat scelerisque. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    {text}
                 </p>
             </div>
 
