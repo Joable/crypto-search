@@ -4,12 +4,22 @@ export default function JoinUs(){
     return(
         <section className={styles.joinUs}>
 
-            <h2 className='mainTitle'>
-                JOIN US VIA
-            </h2>
-            <h2 className='coloredTitle'>
-                DISCORD
-            </h2>
+            <div className={styles.header}>
+                <img src="../../img/smiley3.png" alt="smile" />
+                
+                <div className={styles.title}>
+                
+                    <h2 className='mainTitle'>
+                        JOIN US VIA
+                    </h2>
+                    <h2 className='coloredTitle'>
+                        DISCORD
+                    </h2>
+
+                </div>
+                
+                <img src="../../img/smiley3.png" alt="smile" />
+            </div>
 
             <p>Invest and manage all your crypto in one place</p>
 
