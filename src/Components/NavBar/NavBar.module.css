@@ -24,6 +24,11 @@
     max-height: 100%;
 }
 
+/* navLogo */
+.navLogo{
+    width: 120px;
+}
+
 /* navButtons */
 .navButtons{
     display: flex;
@@ -33,6 +38,9 @@
     margin-right: 10px;
 }
 
+.navButtons button:hover{
+    border-bottom: 2px solid black;
+}
 /* navSocial */
 .navSocial{
     display: flex;
