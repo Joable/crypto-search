@@ -1,3 +1,9 @@
+/* coinImage */
+.coinImage{
+    height: 128px;
+}
+
+
 /* coinText */
 .coinText{
     text-align: center;

@@ -6,7 +6,10 @@ export default function CoinDisplay({ coinData }){
     return(
         <div className={styles.coin}>
 
-            <img src="../../img/smiley1.png" alt="Coin" />
+            <div className={styles.coinImage}>
+                <img src="../../img/smiley1.png" alt="Coin" />
+            </div>
+
 
             <div className={styles.coinText}>
 
