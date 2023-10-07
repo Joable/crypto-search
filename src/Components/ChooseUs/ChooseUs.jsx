@@ -8,7 +8,7 @@ export default function ChooseUs(){
     }
     
     return(
-        <section className={styles.chooseUs}>
+        <section id='chooseUs' className={styles.chooseUs}>
             <h2 className={styles.title}>
                 Why Choose Us
             </h2>

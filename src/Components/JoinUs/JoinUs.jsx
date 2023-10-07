@@ -2,7 +2,7 @@ import styles from './JoinUs.module.css';
 
 export default function JoinUs(){
     return(
-        <section className={styles.joinUs}>
+        <section id='joinUs' className={styles.joinUs}>
 
             <div className={styles.header}>
                 <img src="../../img/smiley3.png" alt="smile" />

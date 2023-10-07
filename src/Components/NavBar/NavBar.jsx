@@ -1,6 +1,27 @@
 import styles from './NavBar.module.css';
 
+import { useEffect, useState } from 'react';
+
 export default function NavBar(){
+    const [landingSection, setLandingSection] = useState("");
+    const [marketUpdate, setMarketUpdate] = useState("");
+    const [chooseUs, setChooseUs] = useState("");
+    const [joinUs, setJoinUs] = useState("");
+
+    useEffect(() => {
+        setLandingSection(document.getElementById('landingSection'));
+        setMarketUpdate(document.getElementById('marketUpdate'));
+        setChooseUs(document.getElementById('chooseUs'));
+        setJoinUs(document.getElementById('joinUs'));
+    }, []);
+
+    const handleScroll = (element) => {
+        const elementTop = element.getBoundingClientRect().top;
+        const bodyTop = document.body.getBoundingClientRect().top;    
+    
+        document.documentElement.scrollTop = elementTop - bodyTop;
+    };
+
     return(
         <div className={styles.navBar}>
 
@@ -12,10 +33,10 @@ export default function NavBar(){
 
                 <div className={styles.navButtons}>
 
-                    <button>Home</button>
-                    <button>Market</button>
-                    <button>Choose Us</button>
-                    <button>Join</button>
+                    <button onClick={() => handleScroll(landingSection)}>Home</button>
+                    <button onClick={() => handleScroll(marketUpdate)}>Market</button>
+                    <button onClick={() => handleScroll(chooseUs)}>Choose Us</button>
+                    <button onClick={() => handleScroll(joinUs)}>Join</button>
 
                 </div>
 

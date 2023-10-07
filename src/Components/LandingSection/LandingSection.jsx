@@ -10,7 +10,7 @@ export default function LandingSection(){
     }
 
     return(
-        <section className={styles.landingSection}>
+        <section id='landingSection' className={styles.landingSection}>
         
             <h2 className='mainTitle'>Title</h2>
             <h2 className='coloredTitle'>Colored Title</h2>
