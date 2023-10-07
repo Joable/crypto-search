@@ -2,10 +2,10 @@
 .divisions{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    width: 100%;
 }
 
-/* marketUpdate */
-.marketUpdate h3{
+.divisions h3{
     display: flex;
     justify-content: flex-end;
 }

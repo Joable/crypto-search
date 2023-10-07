@@ -1,11 +1,3 @@
-/* landingSection */
-.landingSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 /* coins */
 .coins{
     display: flex;
