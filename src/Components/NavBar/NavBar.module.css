@@ -37,4 +37,11 @@
 .navSocial{
     display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+/* socialIcon */
+.socialIcon{
+    width: 35px;
+    height: 35px;
 }

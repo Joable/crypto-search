@@ -27,7 +27,7 @@ export default function NavBar(){
 
             <div className={styles.navWrapper}>
 
-                <a href="#">
+                <a className={styles.navLogo} href="#">
                     <img src="../../img/Logo.svg" alt="Crypto-search" />
                 </a>
 
@@ -42,8 +42,13 @@ export default function NavBar(){
 
                 <div className={styles.navSocial}>
 
-                    <a href="#">Twitter</a>
-                    <a href="#">Discord</a>
+                    <a className={styles.socialIcon} href="#">
+                        <img src='../../img/Twitter.svg' alt='Twitter'/>
+                    </a>
+
+                    <a className={styles.socialIcon} href="#">
+                        <img src="../../img/Discord.svg" alt="Discord"/>
+                    </a>
                 
                 </div>
 
