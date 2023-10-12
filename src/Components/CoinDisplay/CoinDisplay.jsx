@@ -6,7 +6,6 @@ export default function CoinDisplay({ coinData }){
  
     return(
         <div className={styles.coin}>
-            {console.log(JSON.parse(coinData))}
 
             <div className={styles.coinImage}>
                 <img src={iconUrl} alt="Coin" />

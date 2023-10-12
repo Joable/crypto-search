@@ -12,7 +12,7 @@ export default function MarketList(){
     const coinsPerPage = 5;
     const totalCoins = 20;
     const totalPages = createArray(Math.ceil(totalCoins / coinsPerPage));
-    const url = 'https://coinranking1.p.rapidapi.com/coins?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h&tiers%5B0%5D=1&orderBy=marketCap&orderDirection=desc&limit=50&offset=0';
+    const url = `https://coinranking1.p.rapidapi.com/coins?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h&tiers%5B0%5D=1&orderBy=marketCap&orderDirection=desc&limit=${totalCoins}&offset=0`;
     const options = {
 	    method: 'GET',
 	    headers: {
@@ -25,6 +25,7 @@ export default function MarketList(){
     const [currentCoins, setCurrentCoins] = useState([]);
     const [pageIndexes, setPageIndexes] = useState({firstElement: 0, lastElement: coinsPerPage});
     const [activeButton, setActiveButton] = useState(0);
+    const [isLoading, setIsLoading] = useState(true);
 
     /* displays the first array elements at first mount */
     useEffect(() => {
@@ -32,8 +33,15 @@ export default function MarketList(){
             try {
                 const response = await fetch(url, options);
                 const result = await response.text();
+                const resultObject = JSON.parse(result);
+
+                setAllCoins(resultObject.data.coins);    
                 
-                setAllCoins(result);
+                handlePageChange(0);
+                
+                console.log(allCoins)
+
+                setIsLoading(false);
 
             } catch (error) {
                 console.error(error);
@@ -42,7 +50,7 @@ export default function MarketList(){
 
         fetchCoins();
 
-        handlePageChange(0)
+        
     }, []);
 
     /* changes the displayed elements when the page indexes changes*/
@@ -51,6 +59,7 @@ export default function MarketList(){
 
         for(let i = pageIndexes.firstElement ; i < pageIndexes.lastElement ; i++){
                 coins.push(allCoins[i]);
+              //  console.log(coins)
             }
     
             setCurrentCoins(coins);
@@ -70,15 +79,25 @@ export default function MarketList(){
         return buttonClass;
     }
 
-    return(
-        <>
-        <div className={styles.marketList}>
-            {currentCoins.map((num) => <MarketElement coin={num}/>)}
-        </div>
-        {console.log(allCoins)}
-        <div className={styles.listButtons}>
-            {totalPages.map((num) => <button onClick={() => handlePageChange(num)} className={buttonIsActive(num)}> {num + 1} </button>)}
-        </div>
-        </>
-    );
+
+    if(isLoading){
+        return(
+            <>
+            loading ¬w¬
+            </>
+        );
+
+    }else{
+        return(
+            <>
+            <div className={styles.marketList}>
+                {currentCoins.map((coin) => <MarketElement coin={coin}/>)}
+            </div>
+
+            <div className={styles.listButtons}>
+                {totalPages.map((num) => <button onClick={() => handlePageChange(num)} className={buttonIsActive(num)}> {num + 1} </button>)}
+            </div>
+            </>
+        );
+    }
 }
