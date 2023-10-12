@@ -1,5 +1,8 @@
-import Reason from '../Reason/Reason';
 import styles from './ChooseUs.module.css';
+
+import { reasons } from './reasons';
+
+import Reason from '../Reason/Reason';
 
 export default function ChooseUs(){
     const placeholder = {
@@ -16,9 +19,9 @@ export default function ChooseUs(){
             <div className={styles.reasonsWrapper}>
                 
                 <div className={styles.reasonsRight}>
-                    <Reason reasonContent={placeholder}/>
-                    <Reason reasonContent={placeholder}/>
-                    <Reason reasonContent={placeholder}/>
+                    <Reason reasonContent={reasons[0]}/>
+                    <Reason reasonContent={reasons[1]}/>
+                    <Reason reasonContent={reasons[2]}/>
                 </div>
 
                 <div className={styles.reasonsImage}>
@@ -26,9 +29,9 @@ export default function ChooseUs(){
                 </div>
 
                 <div className={styles.reasonsLeft}>
-                    <Reason reasonContent={placeholder}/>
-                    <Reason reasonContent={placeholder}/>
-                    <Reason reasonContent={placeholder}/>
+                    <Reason reasonContent={reasons[3]}/>
+                    <Reason reasonContent={reasons[4]}/>
+                    <Reason reasonContent={reasons[5]}/>
                 </div>
 
             </div>

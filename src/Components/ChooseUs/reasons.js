@@ -1,0 +1,32 @@
+export const reasons = [
+    {
+        image:"../../img/ChooseUsImages/Wallet.svg",
+        title:"",
+        text:"",
+    },
+    {
+        image:"../../img/ChooseUsImages/Pencil.svg",
+        title:"",
+        text:"",
+    },
+    {
+        image:"../../img/ChooseUsImages/Lightning.svg",
+        title:"",
+        text:"",
+    },
+    {
+        image:"../../img/ChooseUsImages/Satellite.svg",
+        title:"",
+        text:"",
+    },
+    {
+        image:"../../img/ChooseUsImages/Dollar.svg",
+        title:"",
+        text:"",
+    },
+    {
+        image:"../../img/ChooseUsImages/Collection.svg",
+        title:"",
+        text:"",
+    },
+]
