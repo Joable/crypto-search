@@ -8,3 +8,14 @@
 .coinText{
     text-align: center;
 }
+
+.coinText > h3 {
+    margin-top: 0;
+}
+
+/* coinName */
+.coinName{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

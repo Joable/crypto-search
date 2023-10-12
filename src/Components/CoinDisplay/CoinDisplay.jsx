@@ -17,7 +17,14 @@ export default function CoinDisplay({ coinData }){
 
             <div className={styles.coinText}>
 
-                <h3>{name} {change}</h3>
+                <div className={styles.coinName}>
+                
+                    <h3>{name}</h3>
+
+                    <h3>{change}%</h3>
+
+                </div>
+
 
                 <h3>$ {reduceDecimals(price)}</h3>
             
