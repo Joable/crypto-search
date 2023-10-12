@@ -5,7 +5,9 @@ export default function JoinUs(){
         <section id='joinUs' className={styles.joinUs}>
 
             <div className={styles.header}>
-                <img src="../../img/smiley3.png" alt="smile" />
+                <div className={styles.imageContainer}>
+                    <img src="../../img/smiley3.png" alt="smile" />
+                </div>
                 
                 <div className={styles.title}>
                 
@@ -18,7 +20,9 @@ export default function JoinUs(){
 
                 </div>
                 
-                <img src="../../img/smiley3.png" alt="smile" />
+                <div className={styles.imageContainer}>
+                    <img src="../../img/smiley3.png" alt="smile" />
+                </div>
             </div>
 
             <p>Invest and manage all your crypto in one place</p>

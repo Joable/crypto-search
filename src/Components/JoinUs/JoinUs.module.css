@@ -1,5 +1,7 @@
 /* joinUs */
 .joinUs{
+    --animation-start: 30%;
+    --animation-finish: 40%;
     position: relative;
 }
 
@@ -50,6 +52,23 @@
     color: #ffffff;
 }
 
-.filter{
-    /*filter: invert(99%) sepia(1%) saturate(2%) hue-rotate(71deg) brightness(117%) contrast(100%);*/
+/* imageContainer */
+@keyframes float{
+    0% {top: var(--animation-start);}
+    50% {top: var(--animation-finish);}
+    100% { top: var(--animation-start); }
 }
+
+.imageContainer{
+    position: relative;
+    width: 50px;
+    height: 100%;
+}
+.imageContainer img{
+    position: absolute;
+    top: var(--animation-start);
+    animation-name: float;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+}
+
