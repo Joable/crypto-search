@@ -8,6 +8,14 @@ export default function CoinDisplay({ coinData }){
         return Number.parseFloat(num).toFixed(2)
     };
 
+    const changeColor = (num) => {
+        let color = "red";
+
+        if(Number.parseFloat(num) > 0) color = "green";
+
+        return color;
+    };
+
     return(
         <div className={styles.coin}>
 
@@ -21,7 +29,7 @@ export default function CoinDisplay({ coinData }){
                 
                     <h3>{name}</h3>
 
-                    <h3>{change}%</h3>
+                    <h3 className={changeColor(change)}>{change}%</h3>
 
                 </div>
 
