@@ -4,6 +4,10 @@ export default function CoinDisplay({ coinData }){
     const coin = JSON.parse(coinData)
     const {name, iconUrl, price, change} = coin.data.coin;
  
+    const reduceDecimals = (num) => {
+        return Number.parseFloat(num).toFixed(2)
+    };
+
     return(
         <div className={styles.coin}>
 
@@ -15,7 +19,7 @@ export default function CoinDisplay({ coinData }){
 
                 <h3>{name} {change}</h3>
 
-                <h3>{price}</h3>
+                <h3>$ {reduceDecimals(price)}</h3>
             
             </div>
 
