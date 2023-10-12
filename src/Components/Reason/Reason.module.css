@@ -2,6 +2,7 @@
 .reason{
     display: flex;
     flex-direction: row;
+    margin-bottom: 50px;
 }
 
 /* image */
