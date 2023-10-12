@@ -7,17 +7,25 @@
 
 /* image */
 .image{
-    min-width: 80px;
-    min-height: 80px;
-    max-width: 80px;
-    max-height: 80px;
+    --wrapper-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: var(--wrapper-size);
+    min-height: var(--wrapper-size);
+    max-width: var(--wrapper-size);
+    max-height: var(--wrapper-size);
+    background-color: black;
+    border-radius: 10px;
 }
 
 .image img{
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    width: 70%;
+    height: 70%;
+}
+/* filter-white */
+.filterWhite{
+    filter: invert(100%) sepia(12%) saturate(627%) hue-rotate(180deg) brightness(117%) contrast(100%);
 }
 
 /* reasonText */

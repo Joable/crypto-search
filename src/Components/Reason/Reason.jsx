@@ -7,7 +7,7 @@ export default function Reason({ reasonContent }){
         <div className={styles.reason}>
             
             <div className={styles.image}>
-                <img src={image} alt="Reason"/>
+                <img className={styles.filterWhite} src={image} alt="Reason"/>
             </div>
 
             <div className={styles.reasonText}>
