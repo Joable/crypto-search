@@ -30,6 +30,9 @@
 
 /* reasonText */
 .reasonText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: auto;
     margin-left: 5px;
 }
