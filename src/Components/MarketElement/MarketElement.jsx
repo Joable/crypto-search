@@ -26,11 +26,11 @@ export default function MarketElement({ coin }){
                 <h4>{coinData.name}</h4>
             </div>
 
-            <h4>${reduceDecimals(coinData.price)}</h4>
+            <h4>$ {reduceDecimals(coinData.price)}</h4>
 
-            <h4>{reduceDecimals(coinData.change)}%</h4>
+            <h4>{reduceDecimals(coinData.change)} %</h4>
 
-            <h4>${coinData.marketCap}</h4>
+            <h4>$ {coinData.marketCap}</h4>
 
         </div>
     );
