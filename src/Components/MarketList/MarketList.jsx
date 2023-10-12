@@ -38,8 +38,6 @@ export default function MarketList(){
                 setAllCoins(resultObject.data.coins);    
                 
                 handlePageChange(0);
-                
-                console.log(allCoins)
 
                 setIsLoading(false);
 
@@ -59,7 +57,6 @@ export default function MarketList(){
 
         for(let i = pageIndexes.firstElement ; i < pageIndexes.lastElement ; i++){
                 coins.push(allCoins[i]);
-              //  console.log(coins)
             }
     
             setCurrentCoins(coins);
