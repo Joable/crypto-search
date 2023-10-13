@@ -19,7 +19,7 @@ export default function MarketUpdate(){
 
             </div>
 
-        <MarketList/>
+            <MarketList/>
         </section>
     );
 }
