@@ -41,17 +41,11 @@ export default function MarketUpdate(){
         
     }, []);
 
-    const changeAllCoins = (newOrder) => {
-        setAllCoins(newOrder);
-
-        console.log(allCoins)
-    };
-
     return(
         <section id='marketUpdate' className={styles.marketUpdate}>
             <h2>Market Update</h2>
 
-            <SortMarket allCoins={allCoins} changeAllCoins={changeAllCoins}/>
+            <SortMarket allCoins={allCoins} changeAllCoins={setAllCoins}/>
 
             <MarketList allCoins={allCoins} totalCoins={totalCoins} isLoading={isLoading}/>
         </section>

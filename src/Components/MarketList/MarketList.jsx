@@ -19,7 +19,6 @@ export default function MarketList({ allCoins, totalCoins, isLoading}){
     /* displays the first array elements when 'allCoins' changes*/
     useEffect(() => {
         handlePageChange(0);
-        
     }, [allCoins]);
 
     /* changes the displayed elements when the page indexes changes*/
