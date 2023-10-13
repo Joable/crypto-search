@@ -16,7 +16,7 @@ export default function MarketList({ allCoins, totalCoins, isLoading}){
     const [activeButton, setActiveButton] = useState(0);
     
 
-    /* displays the first array elements at first mount */
+    /* displays the first array elements when 'allCoins' changes*/
     useEffect(() => {
         handlePageChange(0);
         

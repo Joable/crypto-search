@@ -12,7 +12,7 @@ export default function MarketUpdate(){
     const totalCoins = 20;
     const url = `https://coinranking1.p.rapidapi.com/coins?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h&tiers%5B0%5D=1&orderBy=marketCap&orderDirection=desc&limit=${totalCoins}&offset=0`;
     const options = {
-	    method: 'GET',
+        method: 'GET',
 	    headers: {
             'X-RapidAPI-Key': 'ce25898df1msheb0f33f8531834ap1d5480jsnd7ffc1659004',
             'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com'
@@ -41,13 +41,17 @@ export default function MarketUpdate(){
         
     }, []);
 
-    const handleLoading = () => setIsLoading(false);
+    const changeAllCoins = (newOrder) => {
+        setAllCoins(newOrder);
+
+        console.log(allCoins)
+    };
 
     return(
         <section id='marketUpdate' className={styles.marketUpdate}>
             <h2>Market Update</h2>
 
-            <SortMarket/>
+            <SortMarket allCoins={allCoins} changeAllCoins={changeAllCoins}/>
 
             <MarketList allCoins={allCoins} totalCoins={totalCoins} isLoading={isLoading}/>
         </section>
