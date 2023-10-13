@@ -19,6 +19,7 @@ export default function MarketUpdate(){
 	    }
     };
     const [allCoins, setAllCoins] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const fetchCoins = async () =>{
@@ -27,9 +28,9 @@ export default function MarketUpdate(){
                 const result = await response.text();
                 const resultObject = JSON.parse(result);
 
-                setAllCoins(resultObject.data.coins);    
+                setAllCoins(resultObject.data.coins);
 
-                //setIsLoading(false);
+                setIsLoading(false);
 
             } catch (error) {
                 console.error(error);
@@ -40,13 +41,15 @@ export default function MarketUpdate(){
         
     }, []);
 
+    const handleLoading = () => setIsLoading(false);
+
     return(
         <section id='marketUpdate' className={styles.marketUpdate}>
             <h2>Market Update</h2>
 
             <SortMarket/>
 
-            <MarketList allCoins={allCoins} totalCoins={totalCoins}/>
+            <MarketList allCoins={allCoins} totalCoins={totalCoins} isLoading={isLoading}/>
         </section>
     );
 }

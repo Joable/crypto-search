@@ -8,16 +8,19 @@ import {
 import { createArray } from './createArray';
 import MarketElement from '../MarketElement/MarketElement';
 
-export default function MarketList({ allCoins, totalCoins }){
+export default function MarketList({ allCoins, totalCoins, isLoading}){
     const coinsPerPage = 5;
     const totalPages = createArray(Math.ceil(totalCoins / coinsPerPage));
     const [currentCoins, setCurrentCoins] = useState([]);
     const [pageIndexes, setPageIndexes] = useState({firstElement: 0, lastElement: coinsPerPage});
     const [activeButton, setActiveButton] = useState(0);
-    const [isLoading, setIsLoading] = useState(false);
+    
 
     /* displays the first array elements at first mount */
-    useEffect(() => handlePageChange(0), []);
+    useEffect(() => {
+        handlePageChange(0);
+        
+    }, [allCoins]);
 
     /* changes the displayed elements when the page indexes changes*/
     useEffect(() => {
