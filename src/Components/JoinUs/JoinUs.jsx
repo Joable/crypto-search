@@ -5,7 +5,7 @@ export default function JoinUs(){
         <section id='joinUs' className={styles.joinUs}>
 
             <div className={styles.header}>
-                <div className={styles.imageContainer}>
+                <div className={`${styles.imageContainer} ${styles.bitcoin}`}>
                     <img src="../../img/Bitcoin.svg" alt="Bitcoin" />
                 </div>
                 

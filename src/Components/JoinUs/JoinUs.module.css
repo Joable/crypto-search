@@ -64,11 +64,17 @@
     width: 50px;
     height: 100%;
 }
+
 .imageContainer img{
     position: absolute;
     top: var(--animation-start);
     animation-name: float;
     animation-duration: 4.5s;
     animation-iteration-count: infinite;
+}
+
+/* bitcoin */
+.bitcoin{
+    transform: rotate(-14deg);
 }
 
