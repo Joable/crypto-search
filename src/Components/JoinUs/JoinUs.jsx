@@ -6,7 +6,7 @@ export default function JoinUs(){
 
             <div className={styles.header}>
                 <div className={styles.imageContainer}>
-                    <img src="../../img/smiley3.png" alt="smile" />
+                    <img src="../../img/Bitcoin.svg" alt="Bitcoin" />
                 </div>
                 
                 <div className={styles.title}>
@@ -21,7 +21,7 @@ export default function JoinUs(){
                 </div>
                 
                 <div className={styles.imageContainer}>
-                    <img src="../../img/smiley3.png" alt="smile" />
+                    <img src="../../img/Ethereum.svg" alt="Ethereum" />
                 </div>
             </div>
 
