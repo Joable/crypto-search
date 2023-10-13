@@ -74,8 +74,7 @@ export default function MarketList(){
         if (activeButton == num) buttonClass = styles.activeButton;
 
         return buttonClass;
-    }
-
+    };
 
     if(isLoading){
         return(
