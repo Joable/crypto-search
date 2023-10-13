@@ -1,0 +1,11 @@
+/* divisions */
+.divisions{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.divisions h3{
+    display: flex;
+    justify-content: flex-end;
+}
