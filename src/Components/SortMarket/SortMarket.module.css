@@ -11,6 +11,6 @@
 }
 
 /* firstButton */
-.firstButton h3{
+.firstButton button h3{
     justify-content: flex-start;
 }

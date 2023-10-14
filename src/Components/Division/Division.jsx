@@ -1,9 +1,9 @@
 import styles from './Division.module.css';
 
-export default function Division() {
+export default function Division({title, order}) {
     return(
-        <>
-            division
-        </>
+        <button onClick={order}>
+            <h3>{title}</h3>
+        </button>
     )
 }

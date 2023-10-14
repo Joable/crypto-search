@@ -1,5 +1,7 @@
 import styles from './SortMarket.module.css';
 
+import Division from '../Division/Division';
+
 export default function SortMarket({allCoins, changeAllCoins, triggerChange, setTriggerChange}){
 
     const alphabetically = (a, b) => {
@@ -36,22 +38,15 @@ export default function SortMarket({allCoins, changeAllCoins, triggerChange, set
         <>
         <div className={styles.divisions}>
 
+            <div className={styles.firstButton}>
+                <Division  title={"Coin"} order={() => order(alphabetically)}/>
+            </div>
             
-            <button onClick={() => order(alphabetically)} className={styles.firstButton}>
-                <h3>Coin</h3>
-            </button>
+            <Division title={"Price"} order={() => order(byPrice)}/>
 
-            <button onClick={() => order(byPrice)}>
-                <h3>Price</h3>
-            </button>
+            <Division title={"24hs change"} order={() => order(byChange)}/>
 
-            <button onClick={() => order(byChange)}>
-                <h3>24hs change</h3>
-            </button>
-
-            <button onClick={() => order(byMarketCap)}>
-                <h3>Market cap</h3>
-            </button>
+            <Division title={"Market cap"} order={() => order(byMarketCap)}/>
 
         </div>
         </>
