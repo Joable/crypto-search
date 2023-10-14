@@ -1,8 +1,11 @@
 import styles from './SortMarket.module.css';
 
+import { useState } from 'react';
+
 import Division from '../Division/Division';
 
 export default function SortMarket({allCoins, changeAllCoins, triggerChange, setTriggerChange}){
+    const [activeButton, setActiveButton] = useState("");
 
     const alphabetically = (a, b) => {
         if(a.name < b.name){
@@ -39,14 +42,14 @@ export default function SortMarket({allCoins, changeAllCoins, triggerChange, set
         <div className={styles.divisions}>
 
             <div className={styles.firstButton}>
-                <Division  title={"Coin"} order={() => order(alphabetically)}/>
+                <Division  title={"Coin"} order={() => order(alphabetically)} activeButton={activeButton} setActiveButton={setActiveButton}/>
             </div>
             
-            <Division title={"Price"} order={() => order(byPrice)}/>
+            <Division title={"Price"} order={() => order(byPrice)} activeButton={activeButton} setActiveButton={setActiveButton}/>
 
-            <Division title={"24hs change"} order={() => order(byChange)}/>
+            <Division title={"24hs change"} order={() => order(byChange)} activeButton={activeButton} setActiveButton={setActiveButton}/>
 
-            <Division title={"Market cap"} order={() => order(byMarketCap)}/>
+            <Division title={"Market cap"} order={() => order(byMarketCap)} activeButton={activeButton} setActiveButton={setActiveButton}/>
 
         </div>
         </>
