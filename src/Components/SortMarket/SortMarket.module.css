@@ -5,7 +5,7 @@
     width: 100%;
 }
 
-.divisions h3{
+.divisions div button{
     display: flex;
     justify-content: flex-end;
 }

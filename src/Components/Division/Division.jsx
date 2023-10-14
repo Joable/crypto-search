@@ -8,7 +8,7 @@ export default function Division({title, order, activeButton, setActiveButton}) 
     
     useEffect( () => {
         if(activeButton === title){
-            (arrowType !== 0) ? setArrow(<img src='../../img/Descendant.svg'/>) : setArrow(<img src='../../img/Ascendant.svg'/>);
+            (arrowType !== 0) ? setArrow(<img className={styles.arrow} src='../../img/Descendant.svg'/>) : setArrow(<img className={styles.arrow} src='../../img/Ascendant.svg'/>);
         }else{
             setArrow(<></>)
         }
@@ -24,19 +24,16 @@ export default function Division({title, order, activeButton, setActiveButton}) 
         setActiveButton(title);
 
         changeArrowType();
-
-        console.log(arrowType)
     };
 
     return(
         <>
-        <button onClick={handleClick}>
-            <h3>{title}</h3>
-
-        </button>
-        
-        {arrow}
-        {console.log(arrow)}
+            <button className={styles.division} onClick={handleClick}>
+                {arrow}
+                
+                <h3>{title}</h3>
+            </button>
+            
         </>
     );
 }

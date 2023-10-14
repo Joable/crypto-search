@@ -45,11 +45,19 @@ export default function SortMarket({allCoins, changeAllCoins, triggerChange, set
                 <Division  title={"Coin"} order={() => order(alphabetically)} activeButton={activeButton} setActiveButton={setActiveButton}/>
             </div>
             
-            <Division title={"Price"} order={() => order(byPrice)} activeButton={activeButton} setActiveButton={setActiveButton}/>
+            <div>
+                <Division title={"Price"} order={() => order(byPrice)} activeButton={activeButton} setActiveButton={setActiveButton}/>
+            </div>
 
-            <Division title={"24hs change"} order={() => order(byChange)} activeButton={activeButton} setActiveButton={setActiveButton}/>
+            <div>
+                <Division title={"24hs change"} order={() => order(byChange)} activeButton={activeButton} setActiveButton={setActiveButton}/>
+            </div>
 
-            <Division title={"Market cap"} order={() => order(byMarketCap)} activeButton={activeButton} setActiveButton={setActiveButton}/>
+            <div>
+                <Division title={"Market cap"} order={() => order(byMarketCap)} activeButton={activeButton} setActiveButton={setActiveButton}/>
+            </div>
+
+
 
         </div>
         </>
