@@ -21,6 +21,10 @@ export default function MarketList({ allCoins, totalCoins, isLoading}){
         handlePageChange(0);
     }, [allCoins]);
 
+    useEffect(() =>{ 
+        handlePageChange(0);
+    }, [allCoins[0], allCoins[1], allCoins[2]])
+
     /* changes the displayed elements when the page indexes changes*/
     useEffect(() => {
         let coins = [];
@@ -30,6 +34,7 @@ export default function MarketList({ allCoins, totalCoins, isLoading}){
             }
     
             setCurrentCoins(coins);
+
     }, [pageIndexes]);
 
     const handlePageChange = (page) => {

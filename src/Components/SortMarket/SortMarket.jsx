@@ -1,6 +1,8 @@
 import styles from './SortMarket.module.css';
 
-export default function SortMarket({allCoins , changeAllCoins}){
+import { useEffect } from 'react';
+
+export default function SortMarket({allCoins, changeAllCoins, triggerChange, setTriggerChange}){
 
     const alphabetically = (a, b) => {
         if(a.name < b.name){
@@ -29,7 +31,7 @@ export default function SortMarket({allCoins , changeAllCoins}){
 
         changeAllCoins(newOrder);
 
-        console.log(allCoins)
+        setTriggerChange(triggerChange + 1);
     };
 
     return(

@@ -20,6 +20,7 @@ export default function MarketUpdate(){
     };
     const [allCoins, setAllCoins] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [triggerChange, setTriggerChange] = useState(0);
 
     useEffect(() => {
         const fetchCoins = async () =>{
@@ -41,11 +42,13 @@ export default function MarketUpdate(){
         
     }, []);
 
+    
+
     return(
         <section id='marketUpdate' className={styles.marketUpdate}>
             <h2>Market Update</h2>
 
-            <SortMarket allCoins={allCoins} changeAllCoins={setAllCoins}/>
+            <SortMarket allCoins={allCoins} changeAllCoins={setAllCoins} triggerChange={triggerChange} setTriggerChange={setTriggerChange}/>
 
             <MarketList allCoins={allCoins} totalCoins={totalCoins} isLoading={isLoading}/>
         </section>
