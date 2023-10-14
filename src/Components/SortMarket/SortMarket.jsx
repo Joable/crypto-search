@@ -1,7 +1,5 @@
 import styles from './SortMarket.module.css';
 
-import { useEffect } from 'react';
-
 export default function SortMarket({allCoins, changeAllCoins, triggerChange, setTriggerChange}){
 
     const alphabetically = (a, b) => {
