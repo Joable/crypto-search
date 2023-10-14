@@ -12,6 +12,7 @@
 
 /* arrow */
 .arrow{
+    margin: 0 5px;
     width: 15px;
     height: 15px;
 }
