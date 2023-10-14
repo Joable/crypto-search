@@ -8,7 +8,7 @@ export default function Division({title, order, activeButton, setActiveButton}) 
     
     useEffect( () => {
         if(activeButton === title){
-            (arrowType !== 0) ? setArrow(<img src='../../img/Descendant.svg'/>) : setArrow(<img src='../../img/Descendant.svg'/>);
+            (arrowType !== 0) ? setArrow(<img src='../../img/Descendant.svg'/>) : setArrow(<img src='../../img/Ascendant.svg'/>);
         }else{
             setArrow(<></>)
         }
