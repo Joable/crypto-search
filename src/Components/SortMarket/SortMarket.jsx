@@ -2,7 +2,7 @@ import styles from './SortMarket.module.css';
 
 export default function SortMarket({allCoins , changeAllCoins}){
 
-    const alpha = (a, b) => {
+    const alphabetically = (a, b) => {
         if(a.name < b.name){
             return -1;
         }else if(a.name > b.name){
@@ -16,36 +16,34 @@ export default function SortMarket({allCoins , changeAllCoins}){
         return Number.parseFloat(b.price) - Number.parseFloat(a.price);
     };
 
-    const orderAlphabetically = () => {
-        const newOrder = allCoins.sort(alpha); 
+    const byChange = (a, b) => {
+        return  Number.parseFloat(b.change) - Number.parseFloat(a.change);
+    }
+
+    const order = (type) => {
+        const newOrder = allCoins.sort(type); 
 
         changeAllCoins(newOrder);
 
         console.log(allCoins)
     };
 
-    const orderByPrice = () => {
-        const newOrder = allCoins.sort(byPrice);
-
-        changeAllCoins(newOrder);
-
-        console.log(allCoins)
-    }
-
     return(
         <>
         <div className={styles.divisions}>
 
             
-            <button onClick={orderAlphabetically} className={styles.firstButton}>
+            <button onClick={() => order(alphabetically)} className={styles.firstButton}>
                 <h3>Coin</h3>
             </button>
 
-            <button onClick={orderByPrice}>
+            <button onClick={() => order(byPrice)}>
                 <h3>Price</h3>
             </button>
 
-            <h3>24h change</h3>
+            <button onClick={() => order(byChange)}>
+                <h3>24hs change</h3>
+            </button>
 
             <h3>Market Cap</h3>
 
