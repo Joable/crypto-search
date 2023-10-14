@@ -20,6 +20,10 @@ export default function SortMarket({allCoins , changeAllCoins}){
         return  Number.parseFloat(b.change) - Number.parseFloat(a.change);
     }
 
+    const byMarketCap = (a, b) => {
+        return Number.parseFloat(b.marketCap) - Number.parseFloat(a.marketCap);
+    }
+
     const order = (type) => {
         const newOrder = allCoins.sort(type); 
 
@@ -45,7 +49,9 @@ export default function SortMarket({allCoins , changeAllCoins}){
                 <h3>24hs change</h3>
             </button>
 
-            <h3>Market Cap</h3>
+            <button onClick={() => order(byMarketCap)}>
+                <h3>Market cap</h3>
+            </button>
 
         </div>
         </>
