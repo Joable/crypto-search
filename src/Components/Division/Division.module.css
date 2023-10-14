@@ -1,5 +1,7 @@
 /* division */
 .division{
+    display: flex;
+    align-items: center;
     width: 200px;
 }
 
@@ -9,6 +11,6 @@
 
 /* arrow */
 .arrow{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
