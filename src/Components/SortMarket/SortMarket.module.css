@@ -9,3 +9,8 @@
     display: flex;
     justify-content: flex-end;
 }
+
+/* firstButton */
+.firstButton h3{
+    justify-content: flex-start;
+}

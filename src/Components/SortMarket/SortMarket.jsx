@@ -37,7 +37,7 @@ export default function SortMarket({allCoins , changeAllCoins}){
         <div className={styles.divisions}>
 
             
-            <button onClick={orderAlphabetically}>
+            <button onClick={orderAlphabetically} className={styles.firstButton}>
                 <h3>Coin</h3>
             </button>
 
