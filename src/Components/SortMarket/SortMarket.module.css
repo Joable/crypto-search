@@ -5,12 +5,14 @@
     width: 100%;
 }
 
-.divisions div button{
+/* firstButton */
+.firstButton button{
+    display: flex;
+    justify-content: flex-start;
+}
+/* divisionButton */
+
+.divisionButton{
     display: flex;
     justify-content: flex-end;
-}
-
-/* firstButton */
-.firstButton button h3{
-    justify-content: flex-start;
 }
