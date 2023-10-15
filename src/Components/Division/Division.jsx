@@ -47,9 +47,9 @@ export default function Division({title, ascendant, descendant, activeButton, se
     return(
         <>
             <button className={classNameSelect()} onClick={handleClick}>
-                {arrow}
-                
-                <h3>{title}</h3>
+                    {arrow}
+                    
+                    <h3>{title}</h3>
             </button>
             
         </>
