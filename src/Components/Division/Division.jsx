@@ -2,16 +2,26 @@ import styles from './Division.module.css';
 
 import { useEffect, useState } from 'react';
 
-export default function Division({title, order, activeButton, setActiveButton}) {
+export default function Division({title, ascendant, descendant, activeButton, setActiveButton}) {
     const [arrowType, setArrowType] = useState(1);
     const [arrow, setArrow] = useState(<></>);
     
     useEffect( () => {
         if(activeButton === title){
-            (arrowType !== 0) ? setArrow(<img className={styles.arrow} src='../../img/Descendant.svg'/>) : setArrow(<img className={styles.arrow} src='../../img/Ascendant.svg'/>);
+
+            if(arrowType !== 0){
+                setArrow(<img className={styles.arrow} src='../../img/Descendant.svg'/>);
+
+                descendant();
+            }else{
+                setArrow(<img className={styles.arrow} src='../../img/Ascendant.svg'/>)
+                
+                ascendant();
+            };
+
         }else{
             setArrow(<></>)
-        }
+        };
     },[arrowType, activeButton]);
 
     const changeArrowType = () => {
@@ -19,10 +29,8 @@ export default function Division({title, order, activeButton, setActiveButton}) 
     };
 
     const handleClick = () => {
-        order();
-
         setActiveButton(title);
-
+        
         changeArrowType();
     };
 
