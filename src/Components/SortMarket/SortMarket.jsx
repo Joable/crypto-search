@@ -41,29 +41,32 @@ export default function SortMarket({allCoins, changeAllCoins, triggerChange, set
             </div>
             
             <div className={styles.divisionButton}>
-                <Division title={"Price"}
-                 descendant={() => order(byPriceDesc)}
-                 ascendant={() => order(byPriceAsc)}
-                 activeButton={activeButton}
-                 setActiveButton={setActiveButton}
+                <Division 
+                title={"Price"}
+                descendant={() => order(byPriceDesc)}
+                ascendant={() => order(byPriceAsc)}
+                activeButton={activeButton}
+                setActiveButton={setActiveButton}
                 />
             </div>
 
             <div className={styles.divisionButton}>
-                <Division title={"24hs change"}
-                 descendant={() => order(byChangeDesc)}
-                 ascendant={() => order(byChangeAsc)}
-                 activeButton={activeButton}
-                 setActiveButton={setActiveButton}
+                <Division 
+                title={"24hs change"}
+                descendant={() => order(byChangeDesc)}
+                ascendant={() => order(byChangeAsc)}
+                activeButton={activeButton}
+                setActiveButton={setActiveButton}
                 />
             </div>
 
             <div className={styles.divisionButton}>
-                <Division title={"Market cap"}
-                 descendant={() => order(byMarketCapDesc)}
-                 ascendant={() => order(byMarketCapAsc)}
-                 activeButton={activeButton}
-                 setActiveButton={setActiveButton}
+                <Division 
+                title={"Market cap"}
+                descendant={() => order(byMarketCapDesc)}
+                ascendant={() => order(byMarketCapAsc)}
+                activeButton={activeButton}
+                setActiveButton={setActiveButton}
                 />
             </div>
 

@@ -3,9 +3,11 @@ import styles from './Division.module.css';
 import { useEffect, useState } from 'react';
 
 export default function Division({title, ascendant, descendant, activeButton, setActiveButton}) {
-    const [arrowType, setArrowType] = useState(0);
+    const [arrowType, setArrowType] = useState(1);
     const [arrow, setArrow] = useState(<></>);
     
+
+    /* change the arrow image and call the function that changes the order*/
     useEffect( () => {
         if(activeButton === title){
 
@@ -34,9 +36,17 @@ export default function Division({title, ascendant, descendant, activeButton, se
         changeArrowType();
     };
 
+    const classNameSelect = () =>{
+        let select = styles.division;
+
+        if(title === "Coin") select = styles.coinCase;
+
+        return select;
+    };
+
     return(
         <>
-            <button className={styles.division} onClick={handleClick}>
+            <button className={classNameSelect()} onClick={handleClick}>
                 {arrow}
                 
                 <h3>{title}</h3>

@@ -10,6 +10,17 @@
     margin: 0;
 }
 
+/* coinCase */
+.coinCase{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 200px;
+}
+
+.coinCase h3{
+    margin: 0;
+}
 /* arrow */
 .arrow{
     margin: 0 5px;
