@@ -2,6 +2,7 @@
 .marketElement{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    align-items: center;
     height: 85px;
     border-bottom: 1px solid black;
 }
