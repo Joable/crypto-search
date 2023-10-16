@@ -70,8 +70,6 @@ export default function SortMarket({allCoins, changeAllCoins, triggerChange, set
                 />
             </div>
 
-
-
         </div>
         </>
     );
