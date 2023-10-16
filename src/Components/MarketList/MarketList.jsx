@@ -7,6 +7,7 @@ import {
 
 import { createArray } from './createArray';
 import MarketElement from '../MarketElement/MarketElement';
+import LoadingMarketElement from '../MarketElement/LoadingMarketElement';
 
 export default function MarketList({ allCoins, totalCoins, isLoading}){
     const coinsPerPage = 5;
@@ -51,24 +52,16 @@ export default function MarketList({ allCoins, totalCoins, isLoading}){
         return buttonClass;
     };
 
-    if(isLoading){
-        return(
-            <>
-            loading ¬w¬
-            </>
-        );
 
-    }else{
-        return(
-            <>
-            <div className={styles.marketList}>
-                {currentCoins.map((coin) => <MarketElement coin={coin}/>)}
-            </div>
+    return(
+        <>
+        <div className={styles.marketList}>
+            {currentCoins.map((coin) => <MarketElement coin={coin}/>)}
+        </div>
 
-            <div className={styles.listButtons}>
-                {totalPages.map((num) => <button onClick={() => handlePageChange(num)} className={buttonIsActive(num)}> {num + 1} </button>)}
-            </div>
-            </>
-        );
-    }
+        <div className={styles.listButtons}>
+            {totalPages.map((num) => <button onClick={() => handlePageChange(num)} className={buttonIsActive(num)}> {num + 1} </button>)}
+        </div>
+        </>
+    );
 }
