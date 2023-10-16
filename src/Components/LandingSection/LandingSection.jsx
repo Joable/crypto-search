@@ -40,18 +40,18 @@ export default function LandingSection(){
 
         fetchCoins().then(() => setCoinsData(coinsUpdate));
 
-        //setIsLoading(false);
+        setIsLoading(false);
     }, []);
 
     const handleLoading = () => {
         if(isLoading){
             return(
-                <LoadingCoinDisplay/>
-                )
+                coins.map((coin) => <LoadingCoinDisplay coin={coin}/>)
+                );
         }else{
             return(
                 coinsData.map((coin) => <CoinDisplay coinData={coin}/>)
-            )
+            );
         }
     }
 
