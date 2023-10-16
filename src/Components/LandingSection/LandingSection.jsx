@@ -1,5 +1,6 @@
 import styles from './LandingSection.module.css';
 import { 
+    Suspense,
     useEffect,
     useState
 } from 'react';
@@ -7,10 +8,12 @@ import {
 import { coins } from './coins';
 
 import CoinDisplay from '../CoinDisplay/CoinDisplay';
+import LoadingCoinDisplay from '../CoinDisplay/LoadingCoinDisplay';
 
 
 export default function LandingSection(){
     const [coinsData, setCoinsData] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
     const options = {
         method: 'GET',
         headers: {
@@ -36,7 +39,21 @@ export default function LandingSection(){
         }
 
         fetchCoins().then(() => setCoinsData(coinsUpdate));
+
+        //setIsLoading(false);
     }, []);
+
+    const handleLoading = () => {
+        if(isLoading){
+            return(
+                <LoadingCoinDisplay/>
+                )
+        }else{
+            return(
+                coinsData.map((coin) => <CoinDisplay coinData={coin}/>)
+            )
+        }
+    }
 
     return(
         <section id='landingSection' className={styles.landingSection}>
@@ -46,7 +63,7 @@ export default function LandingSection(){
 
             <div className={styles.coins}>
 
-                {coinsData.map((coin) => <CoinDisplay coinData={coin}/>)}
+                {handleLoading()}
 
             </div>
 
