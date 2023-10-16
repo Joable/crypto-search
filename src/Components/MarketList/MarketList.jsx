@@ -52,11 +52,22 @@ export default function MarketList({ allCoins, totalCoins, isLoading}){
         return buttonClass;
     };
 
+    const handleLoading = () => {
+        if(isLoading){
+            return(
+                <LoadingMarketElement/>
+            );
+        }else{
+            return(
+                currentCoins.map((coin) => <MarketElement coin={coin}/>)
+            );
+        }
+    }
 
     return(
         <>
         <div className={styles.marketList}>
-            {currentCoins.map((coin) => <MarketElement coin={coin}/>)}
+            {handleLoading()}
         </div>
 
         <div className={styles.listButtons}>
