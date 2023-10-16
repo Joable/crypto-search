@@ -32,8 +32,7 @@ export default function CoinDisplay({ coinData }){
                     <h3 className={changeColor(change)}>{change}%</h3>
 
                 </div>
-
-
+                 
                 <h3>$ {reduceDecimals(price)}</h3>
             
             </div>
