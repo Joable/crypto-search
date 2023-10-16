@@ -53,15 +53,27 @@ export default function MarketList({ allCoins, totalCoins, isLoading}){
     };
 
     const handleLoading = () => {
+        const iterator = [...Array(coinsPerPage).keys()];
+
         if(isLoading){
             return(
-                <LoadingMarketElement/>
+                iterator.map(() => <LoadingMarketElement/>)
             );
         }else{
             return(
                 currentCoins.map((coin) => <MarketElement coin={coin}/>)
             );
         }
+    };
+
+    const hideButtons = () => {
+        if(isLoading){
+            return <></>
+        }else{
+            return totalPages.map(
+                (num) => <button onClick={() => handlePageChange(num)} className={buttonIsActive(num)}> {num + 1} </button>
+                )
+        };
     }
 
     return(
@@ -71,7 +83,7 @@ export default function MarketList({ allCoins, totalCoins, isLoading}){
         </div>
 
         <div className={styles.listButtons}>
-            {totalPages.map((num) => <button onClick={() => handlePageChange(num)} className={buttonIsActive(num)}> {num + 1} </button>)}
+            {hideButtons()}
         </div>
         </>
     );

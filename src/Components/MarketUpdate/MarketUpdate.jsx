@@ -31,7 +31,7 @@ export default function MarketUpdate(){
 
                 setAllCoins(resultObject.data.coins);
 
-                //setIsLoading(false);
+                setIsLoading(false);
 
             } catch (error) {
                 console.error(error);
