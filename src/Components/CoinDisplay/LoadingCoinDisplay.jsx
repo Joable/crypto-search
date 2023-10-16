@@ -2,14 +2,26 @@ import styles from './CoinDisplay.module.css';
 
 export default function LoadingCoinDisplay(){
     return(
-        <>
-            <img src="" alt="" />
+        <div className={styles.coin}>
 
-            {name}
+            <div className={styles.coinImage}>
+                <img src="" alt="Coin" />
+            </div>
 
-            <h3>-.-- %</h3>
+            <div className={styles.coinText}>
 
-            <h3>$ ----.--</h3>
-        </>
+                <div className={styles.coinName}>
+                
+                    <h3>{name}</h3>
+
+                    <h3>--.- %</h3>
+
+                </div>
+                 
+                <h3>$ ----.--</h3>
+            
+            </div>
+
+        </div>
     );
 }
