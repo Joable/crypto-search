@@ -7,7 +7,7 @@ html{
   --secondary-color: #f2f704;
   --third-color:"";
   --fourth-color:""; 
-  background-image: linear-gradient(var(--primary-color),10% , var(--secondary-color));
+  background-image: linear-gradient(var(--primary-color), 20%, var(--secondary-color));
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
