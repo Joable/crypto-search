@@ -16,6 +16,12 @@
     font-size: 90px;
     margin-top: 0;
     margin-bottom: 0;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom right,green, yellow);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 /* red */
