@@ -3,6 +3,10 @@ html{
 }
 
 :root {
+  --primary-color: #1d9728;
+  --secondary-color: #f2f704;
+  --third-color:"";
+  --fourth-color:""; 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
