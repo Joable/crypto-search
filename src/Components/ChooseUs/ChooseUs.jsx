@@ -25,7 +25,7 @@ export default function ChooseUs(){
                 </div>
 
                 <div className={styles.reasonsImage}>
-                    <img src="../../img/happiness.png" alt="happiness" />
+                    <img src="../../img/ChooseUsImages/MiddleImage.svg" alt="Crypto" />
                 </div>
 
                 <div className={styles.reasonsLeft}>
