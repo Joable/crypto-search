@@ -17,10 +17,12 @@
     font-size: 18px;
     width: 35px;
     height: 35px;
+    border-radius: 50%;
 }
 
 /* inactiveButton */
 .inactiveButton{
+    background-color: rgb(165, 165, 165);
     border: 1px solid white;
 }
 
@@ -30,6 +32,6 @@
 
 /* activeButton */
 .activeButton{
-    background-color: gray;
+    background-image: linear-gradient(var(--primary-color), var(--secondary-color));
     border: 1px solid black;
 }
