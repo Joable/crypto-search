@@ -40,6 +40,7 @@ button{
   font-size: 18px;
   font-family: 'Josefin Sans', sans-serif;
   color: var(--text-color);
+  background-color: transparent;
   border: 0;
 }
 
