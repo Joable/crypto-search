@@ -7,15 +7,14 @@ html{
   --secondary-color: #f2f704;
   --third-color:"";
   --fourth-color:""; 
-  background-image: linear-gradient(var(--primary-color), 20%, var(--secondary-color));
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
+  background-image: linear-gradient(var(--primary-color), 40%, var(--secondary-color));
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   overflow-x: hidden;
