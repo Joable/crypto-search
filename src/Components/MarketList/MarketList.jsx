@@ -71,7 +71,7 @@ export default function MarketList({ allCoins, totalCoins, isLoading}){
             return <></>
         }else{
             return totalPages.map(
-                (num) => <button onClick={() => handlePageChange(num)} className={buttonIsActive(num)}> {num + 1} </button>
+                (num) => <button onClick={() => handlePageChange(num)} className={`${styles.button} ${buttonIsActive(num)}`}> {num + 1} </button>
                 )
         };
     }

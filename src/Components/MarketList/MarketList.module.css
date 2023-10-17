@@ -12,11 +12,15 @@
     gap: 5px;
 }
 
-/* inactiveButton */
-.inactiveButton{
+/* button */
+.button{
     font-size: 18px;
     width: 35px;
     height: 35px;
+}
+
+/* inactiveButton */
+.inactiveButton{
     border: 1px solid white;
 }
 
@@ -26,9 +30,6 @@
 
 /* activeButton */
 .activeButton{
-    font-size: 18px;
-    width: 35px;
-    height: 35px;
     background-color: gray;
     border: 1px solid black;
 }
