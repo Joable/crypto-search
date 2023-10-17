@@ -3,6 +3,7 @@ html{
 }
 
 :root {
+  --text-color: white;
   --primary-color: #0802A3;
   --secondary-color: #FF4B91;
   --third-color: #FF7676;
@@ -15,6 +16,7 @@ html{
 
 body {
   background-image: linear-gradient(var(--third-color), 40%, var(--fourth-color));
+  color: var(--text-color);
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   overflow-x: hidden;
@@ -37,7 +39,7 @@ h2{
 button{
   font-size: 18px;
   font-family: 'Josefin Sans', sans-serif;
-  background-color: white;
+  color: var(--text-color);
   border: 0;
 }
 
