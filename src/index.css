@@ -3,10 +3,10 @@ html{
 }
 
 :root {
-  --primary-color: #1d9728;
-  --secondary-color: #f2f704;
-  --third-color:"";
-  --fourth-color:""; 
+  --primary-color: #0802A3;
+  --secondary-color: #FF4B91;
+  --third-color: #FF7676;
+  --fourth-color: #FFCD4B; 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -14,7 +14,7 @@ html{
 }
 
 body {
-  background-image: linear-gradient(var(--primary-color), 40%, var(--secondary-color));
+  background-image: linear-gradient(var(--third-color), 40%, var(--fourth-color));
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   overflow-x: hidden;
