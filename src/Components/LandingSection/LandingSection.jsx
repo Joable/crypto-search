@@ -1,6 +1,5 @@
 import styles from './LandingSection.module.css';
 import { 
-    Suspense,
     useEffect,
     useState
 } from 'react';
@@ -58,8 +57,8 @@ export default function LandingSection(){
     return(
         <section id='landingSection' className={styles.landingSection}>
         
-            <h2 className='mainTitle'>Title</h2>
-            <h2 className='coloredTitle'>Colored Title</h2>
+            <h2 className='mainTitle'>TRACK AND TRADE</h2>
+            <h2 className='coloredTitle'>CRYPTO CURRENCIES</h2>
 
             <div className={styles.coins}>
 
