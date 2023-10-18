@@ -6,7 +6,12 @@
     align-items: center;
     height: 85px;
     padding: 0 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.marketElement:hover{
+    background-color: var(--third-color);
+
 }
 
 .marketElement h4{
