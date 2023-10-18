@@ -12,9 +12,16 @@ export default function ChooseUs(){
     
     return(
         <section id='chooseUs' className={styles.chooseUs}>
-            <h2 className={styles.title}>
-                Why Choose Us
-            </h2>
+            <div className={styles.title}>
+                <h2 className='mainTitle'>
+                    WHY
+                </h2>
+
+                <h2 className={`${styles.space} coloredTitle`}>
+                    CHOOSE US
+                </h2> 
+            </div>
+
 
             <div className={styles.reasonsWrapper}>
                 
