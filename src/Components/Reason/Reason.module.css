@@ -15,17 +15,13 @@
     min-height: var(--wrapper-size);
     max-width: var(--wrapper-size);
     max-height: var(--wrapper-size);
-    background-color: black;
+    background-image: linear-gradient(25deg, var(--primary-color) 20%, var(--secondary-color));
     border-radius: 10px;
 }
 
 .image img{
     width: 70%;
     height: 70%;
-}
-/* filter-white */
-.filterWhite{
-    filter: invert(100%) sepia(12%) saturate(627%) hue-rotate(180deg) brightness(117%) contrast(100%);
 }
 
 /* reasonText */
