@@ -34,7 +34,7 @@
     height: 50px;
     border-radius: 40px;
     color: white;
-    background-color: black;
+    background-image: linear-gradient(25deg, var(--primary-color), var(--secondary-color));
     margin-top: 75px;
 }
 

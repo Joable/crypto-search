@@ -22,11 +22,11 @@ export const reasons = [
     {
         image:"../../img/ChooseUsImages/Dollar.svg",
         title:"TAKE A MARKET TO SELL",
-        text:"Discover, collectthe right collections to buy or sell.",
+        text:"Discover, collect the right collections to buy or sell.",
     },
     {
         image:"../../img/ChooseUsImages/Collection.svg",
         title:"DRIVE YOUR COLLECTION",
-        text:"We make it easy to discover, inves and manage.",
+        text:"We make it easy to discover, invest and manage.",
     },
 ]
