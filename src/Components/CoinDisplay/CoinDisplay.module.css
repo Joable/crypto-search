@@ -1,6 +1,11 @@
+/* coin */
+.coin{
+    width: 200px;
+}   
+
 /* coinImage */
 .coinImage{
-    height: 128px;
+    height: 25%;
 }
 
 
@@ -17,7 +22,7 @@
 .coinName{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
     padding: 0 5px;
 }

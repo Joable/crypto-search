@@ -1,6 +1,9 @@
 /* coins */
 .coins{
+    box-sizing: border-box;
     display: flex;
-    gap: 25px;
+    justify-content: space-between;
+    width: 100%;
     margin: 20px 0 0 0;
+    padding: 0 25px;
 }
