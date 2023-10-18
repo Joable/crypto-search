@@ -23,6 +23,8 @@ export default function Division({title, ascendant, descendant, activeButton, se
 
         }else{
             setArrow(<></>)
+
+            setArrowType(1);
         };
     },[arrowType, activeButton]);
 
