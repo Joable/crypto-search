@@ -46,7 +46,10 @@ export default function MarketUpdate(){
 
     return(
         <section id='marketUpdate' className={styles.marketUpdate}>
-            <h2>Market Update</h2>
+
+            <div className={styles.marketTitle}>
+                <h2>Market Update</h2>
+            </div>
 
             <SortMarket allCoins={allCoins} changeAllCoins={setAllCoins} triggerChange={triggerChange} setTriggerChange={setTriggerChange}/>
 

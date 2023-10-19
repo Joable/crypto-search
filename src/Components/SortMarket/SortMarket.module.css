@@ -5,7 +5,7 @@
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
     margin-top: 25px;
-    padding: 10px;
+    padding: 10px 0px;
     background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
     border-bottom: 1px solid black;
     border-radius: 15px 15px 0 0;
