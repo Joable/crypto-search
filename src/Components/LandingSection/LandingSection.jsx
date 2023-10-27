@@ -8,7 +8,6 @@ import { coins } from './coins';
 
 import CoinDisplay from '../CoinDisplay/CoinDisplay';
 import LoadingCoinDisplay from '../CoinDisplay/LoadingCoinDisplay';
-import Spinner from '../Spinner/Spinner';
 
 
 export default function LandingSection(){
@@ -40,7 +39,7 @@ export default function LandingSection(){
 
         fetchCoins().then(() => setCoinsData(coinsUpdate));
 
-        //setIsLoading(false);
+        setIsLoading(false);
     }, []);
 
     const handleLoading = () => {

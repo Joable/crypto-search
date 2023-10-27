@@ -1,11 +1,13 @@
 import styles from './CoinDisplay.module.css';
 
+import Spinner from '../Spinner/Spinner';
+
 export default function LoadingCoinDisplay({coin}){
     return(
         <div className={styles.coin}>
 
-            <div className={styles.coinImage}>
-                <img src={coin.image} alt="Coin" />
+            <div className={styles.coinLoading}>
+                <Spinner/>
             </div>
 
             <div className={styles.coinText}>
