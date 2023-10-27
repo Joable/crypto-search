@@ -8,6 +8,7 @@ import { coins } from './coins';
 
 import CoinDisplay from '../CoinDisplay/CoinDisplay';
 import LoadingCoinDisplay from '../CoinDisplay/LoadingCoinDisplay';
+import Spinner from '../Spinner/Spinner';
 
 
 export default function LandingSection(){
@@ -39,7 +40,7 @@ export default function LandingSection(){
 
         fetchCoins().then(() => setCoinsData(coinsUpdate));
 
-        setIsLoading(false);
+        //setIsLoading(false);
     }, []);
 
     const handleLoading = () => {
@@ -61,7 +62,7 @@ export default function LandingSection(){
             <h2 className='coloredTitle'>CRYPTO CURRENCIES</h2>
 
             <div className={styles.coins}>
-
+                <Spinner/>
                 {handleLoading()}
 
             </div>
