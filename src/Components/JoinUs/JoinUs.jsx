@@ -6,7 +6,7 @@ export default function JoinUs(){
 
             <div className={styles.header}>
                 <div className={`${styles.imageContainer} ${styles.bitcoin}`}>
-                    <img src="../../img/Bitcoin.svg" alt="Bitcoin" />
+                    <img src="img/Bitcoin.svg" alt="Bitcoin" />
                 </div>
                 
                 <div className={styles.title}>
@@ -21,7 +21,7 @@ export default function JoinUs(){
                 </div>
                 
                 <div className={styles.imageContainer}>
-                    <img src="../../img/Ethereum.svg" alt="Ethereum" />
+                    <img src="img/Ethereum.svg" alt="Ethereum" />
                 </div>
             </div>
 
@@ -31,13 +31,13 @@ export default function JoinUs(){
 
             <div className={styles.social}>
 
-                <a href="#" className="white-filter"><img src="../../img/Twitter.svg" alt="Twitter"/></a>
+                <a href="#" className="white-filter"><img src="img/Twitter.svg" alt="Twitter"/></a>
                 
-                <a href="#" className="white-filter"><img src="../../img/Discord.svg" alt="Discord"/></a>
+                <a href="#" className="white-filter"><img src="img/Discord.svg" alt="Discord"/></a>
                 
-                <a href="#" className="white-filter"><img src="../../img/Facebook.svg" alt="Facebook"/></a>
+                <a href="#" className="white-filter"><img src="img/Facebook.svg" alt="Facebook"/></a>
                 
-                <a href="#" className="white-filter"><img src="../../img/Youtube.svg" alt="Youtube"/></a>
+                <a href="#" className="white-filter"><img src="img/Youtube.svg" alt="Youtube"/></a>
 
             </div>
 
