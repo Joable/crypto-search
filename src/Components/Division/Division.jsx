@@ -12,11 +12,11 @@ export default function Division({title, ascendant, descendant, activeButton, se
         if(activeButton === title){
 
             if(arrowType !== 0){
-                setArrow(<img className={styles.arrow} src='../../img/Ascendant.svg'/>)
+                setArrow(<img className={styles.arrow} src='img/Ascendant.svg'/>)
                 
                 ascendant();
             }else{
-                setArrow(<img className={styles.arrow} src='../../img/Descendant.svg'/>);
+                setArrow(<img className={styles.arrow} src='img/Descendant.svg'/>);
 
                 descendant();
             };
