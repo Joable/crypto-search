@@ -28,7 +28,7 @@ export default function NavBar(){
             <div className={styles.navWrapper}>
 
                 <a className={styles.navLogo} href="#">
-                    <img className='white-filter' src="../../img/Logo.svg" alt="Crypto-search" />
+                    <img className='white-filter' src="img/Logo.svg" alt="Crypto-search" />
                 </a>
 
                 <div className={styles.navButtons}>
@@ -43,11 +43,11 @@ export default function NavBar(){
                 <div className={styles.navSocial}>
 
                     <a className={`${styles.socialIcon} white-filter`} href="#">
-                        <img src='../../img/Twitter.svg' alt='Twitter'/>
+                        <img src='img/Twitter.svg' alt='Twitter'/>
                     </a>
 
                     <a className={`${styles.socialIcon} white-filter`} href="#">
-                        <img src="../../img/Discord.svg" alt="Discord"/>
+                        <img src="img/Discord.svg" alt="Discord"/>
                     </a>
                 
                 </div>
