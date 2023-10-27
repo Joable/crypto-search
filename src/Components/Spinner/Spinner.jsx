@@ -2,6 +2,6 @@ import styles from './Spinner.module.css';
 
 export default function Spinner(){
     return(
-        <>Spinner</>
+        <span class={styles.loader}></span>
     )
 }

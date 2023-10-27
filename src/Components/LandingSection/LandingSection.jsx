@@ -62,7 +62,7 @@ export default function LandingSection(){
             <h2 className='coloredTitle'>CRYPTO CURRENCIES</h2>
 
             <div className={styles.coins}>
-                <Spinner/>
+
                 {handleLoading()}
 
             </div>
