@@ -39,8 +39,11 @@ export default function LandingSection(){
 
         fetchCoins().then(() => setCoinsData(coinsUpdate));
 
-        setIsLoading(false);
     }, []);
+
+    useEffect(() => {
+        if(coinsData.length > 0) setIsLoading(false);
+    }, [coinsData])
 
     const handleLoading = () => {
         if(isLoading){
