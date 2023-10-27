@@ -32,7 +32,7 @@ export default function ChooseUs(){
                 </div>
 
                 <div className={styles.reasonsImage}>
-                    <img className='white-filter' src="../../img/ChooseUsImages/MiddleImage.svg" alt="Crypto" />
+                    <img className='white-filter' src="img/ChooseUsImages/MiddleImage.svg" alt="Crypto" />
                 </div>
 
                 <div className={styles.reasonsLeft}>
